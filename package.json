@@ -1,0 +1,17 @@
+{
+  "name": "beatty-sequence-generator",
+  "version": "0.1.0",
+  "description": "TypeScript library that generates Beatty sequence pairs splitting the positive integers by an irrational index",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "BSD-3-Clause",
+  "dependencies": {}
+}
