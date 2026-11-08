@@ -35,3 +35,10 @@ The trade-off: floating-point cannot represent irrationals exactly. Rather than 
 - `generateComplementaryBeatty(r, count)` — first `count` terms of `floor(n·r/(r−1))`
 - `beattyAt(r, n)` — the n-th term (1-indexed) of the primary sequence
 - `complementaryBeattyAt(r, n)` — the n-th term (1-indexed) of the complementary sequence
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
